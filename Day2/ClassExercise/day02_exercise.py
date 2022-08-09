@@ -5,7 +5,9 @@ class Senator():
     self.name = name
     self.bills_voted_on = [] ## list of Bill objects
 
-  def __str__(self): # Print method  
+  def __str__(self): # Print method
+    return "Senator's name: %s" % (self.name)  
+  
 
   def vote(self, bill, choice):
     #update the bill object--add the senator's name to the the list of yes/no/abstain
