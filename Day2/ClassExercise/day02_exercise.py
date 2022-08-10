@@ -13,6 +13,8 @@ class Senator():
     #update the bill object--add the senator's name to the the list of yes/no/abstain
     #update the senator object--add this bill to the bills this senator has voted on
     #print an informative message announcing the vote 
+    self.bills_voted_on.append(bill)
+    if choice in ["yes", "no", "abstantion"]
 
 class Bill():
   def __init__(self, title):
