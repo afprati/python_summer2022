@@ -11,19 +11,30 @@
 
 ## make all characters capitalized
 def shout(txt):
+	txt_shout = txt.upper()
+	return txt_shout
+
+shout("hola")
 
 
 ## reverse all characters in string
 def reverse(txt):
+    return txt[::-1]
 
+reverse("hola")
 
 ## reverse word order in string
 def reversewords(txt):
-
+    return txt.split()[::-1]
+    
+reversewords("hola como estas")
+    
 
 ## reverses letters in each word
 def reversewordletters(txt):
+    return reverse(txt)
 
+reversewordletters("hola como estas")
 
 ## optional -- change text to piglatin.. google it!
 def piglatin(txt):
