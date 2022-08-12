@@ -11,8 +11,11 @@
 
 ## make all characters capitalized
 def shout(txt):
-	txt_shout = txt.upper()
-	return txt_shout
+    try:        
+	    txt_shout = txt.upper()
+    	return txt_shout
+
+
 
 shout("hola")
 
@@ -32,14 +35,12 @@ reversewords("hola como estas")
 
 ## reverses letters in each word
 def reversewordletters(txt):
-    return reverse(txt)
+    return reversewords(reverse(txt))
 
 reversewordletters("hola como estas")
 
 ## optional -- change text to piglatin.. google it!
 def piglatin(txt):
-
-
 
 ## Try/catch is more common when using
 ## someone else's code, scraping, etc. -----------------------------------
