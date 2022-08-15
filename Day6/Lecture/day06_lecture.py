@@ -8,7 +8,7 @@
 # First Instructor: Matt Dickenson
 
 import os
-os.chdir('C:\\Users\\miame\\Documents\\GitHub\\python_summer2022\\Day6\\Lecture')
+os.chdir('C:\\Users\\Tita\\Documents\\GitHub\\python_summer2022\\Day6\\Lecture')
 
 #---------- APIs ----------#
 
@@ -227,7 +227,7 @@ plot1.draw('C:\\Users\\miame\\Documents\\GitHub\\python_summer2022\\Day6\\Lectur
 import tweepy
 # https://docs.tweepy.org/en/v4.10.0/api.html
 
-twitter = importlib.import_module('start_twitter')
+twitter = importlib.import_module('start_twitter') 
 api = twitter.client
 
 # See rate limit
