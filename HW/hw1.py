@@ -42,7 +42,7 @@ class Portfolio:
             self.stocks[symbol] -= stock_number
             self.hist.append(f"{stock_number} stocks {symbol} sold at ${stock_price} each stock")
         else:
-            raise Exception("Lorem ipsum")
+            raise Exception("Not enough stocks!")
     def buyMutualFund(self, stock_number, mf):
         cost = stock_number * mf.getPrice()
         if self.cash >= cost:
