@@ -7,5 +7,5 @@ Created on Mon Aug 15 14:02:59 2022
 
 import googlemaps
 
-api_key = "AIzaSyBR98QJUBDpXe5vtI73zkOZPLCzKPY4vVI"
+api_key = ""
 client = googlemaps.Client(api_key)
