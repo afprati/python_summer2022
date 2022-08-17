@@ -245,8 +245,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup as bs
 from selenium.webdriver.common.keys import Keys
-
-# pip3 install selenium
+pip install selenium
+# 
 # download appropriate web driver from browser, e.g. https://chromedriver.chromium.org/
 
 # Interactive example:
