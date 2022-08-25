@@ -95,7 +95,6 @@ for i in n:
 
 
 
-
 #plotting time
 plt.plot(n, timeBubble, label="Bubble Sort")
 plt.plot(n, timeQuick, label="Quick Sort")
