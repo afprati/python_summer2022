@@ -5,7 +5,7 @@ Created on Sat Aug 27 03:10:05 2022
 @author: Tita
 """
 
-class Node:
+class Node: #O(1)initialazing a node has a constant complexity
     def __init__(self, _value=None, _next=None):
         self.value = _value
         self.next = _next
@@ -30,7 +30,7 @@ class LinkedList:
         return count
     
     #takes a number and adds it to the end of the list
-    def addNode(self, new_value):
+    def addNode(self, new_value):#O(n) because the new node will iterate over other nodes until find its place
         if self.head is None:
             self.tail = self.head = Node(new_value) #If there is no nodes, then the head and tail will be the new value
             
@@ -52,14 +52,14 @@ class LinkedList:
         return current
 
     #takes a number and adds it after the after_node
-    def addNodeAfter(self, new_value, after_node):
+    def addNodeAfter(self, new_value, after_node): 
         #using the position to insert the new node
         current = self.getPosition(after_node)
         new_node = Node(new_value)       
         new_node.next = current.next
         current.next = new_node
     #Takes a value and adds before the before_node
-    def addNodeBefore(self, new_value, before_node):
+    def addNodeBefore(self, new_value, before_node):#O(1) in contrast to addNode, add a node before or after do not iterate over each node to find its place, it goes directly to its place. So the complexity is constant
         new_node = Node(new_value)
         
         if (before_node < 1):        
@@ -74,7 +74,7 @@ class LinkedList:
          before_node.next = new_node
          
          
-    def removeNode(self, node_to_remove):
+    def removeNode(self, node_to_remove):#O(n) similar to addNode because need to iterate over the other nodes
         if node_to_remove == 0: #in case to remove head, then next node will be head
             self.head = self.head.next
         else:
@@ -86,7 +86,7 @@ class LinkedList:
  
     
     #reverse linked list.
-    def reverse(self):
+    def reverse(self): #O(n) because it changes node by node
         prev_node = None
         current_node = self.head
         while(current_node is not None):
@@ -96,11 +96,7 @@ class LinkedList:
             current_node = next_node
         self.head = prev_node
         
-
-        
-
-        
-        
+    
 link_list = LinkedList()
 link_list.addNode(5)
 link_list.addNode(12)
